@@ -1,0 +1,26 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pengecekan Bilangan Positif/Negatif</title>
+  </head>
+  <body>
+    <p>Masukkan suatu bilangan:</p>
+    <input type="number" id="inputNumber" />
+    <button onclick="checkNumber()">Cek</button>
+    <p id="result"></p>
+
+    <script>
+      function checkNumber() {
+        var number = document.getElementById("inputNumber").value;
+
+        if (number > 0) {
+          document.getElementById("result").innerHTML = "Bilangan positif.";
+        } else {
+          document.getElementById("result").innerHTML = "Bilangan negatif.";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hasil dari luas persegi panjang dengan panjang 10 lebar 5 yaitu :</p>
+    <p id="hasil">Hasilnya</p>
+    <script>
+      var panjang = 10;
+      var lebar = 5;
+      var hasil = document.getElementById("hasil");
+
+      var luasPersegiPanjang = panjang * lebar;
+
+      hasil.innerHTML = luasPersegiPanjang;
+      console.log("Luas Persegi Panjang: " + luasPersegiPanjang);
+    </script>
+  </body>
+</html>

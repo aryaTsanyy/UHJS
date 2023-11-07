@@ -1,0 +1,48 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Aritmatika Dasar</title>
+  </head>
+  <body>
+    <h1>Kalkulator</h1>
+    <input type="number" id="angka1" placeholder="Masukkan Angka Pertama" />
+    <input type="number" id="angka2" placeholder="Masukkan Angka Kedua" />
+    <button onclick="hitung()">Hitung</button>
+    <p id="hasil"></p>
+
+    <script>
+      function hitung() {
+        var angka1 = parseFloat(document.getElementById("angka1").value);
+        var angka2 = parseFloat(document.getElementById("angka2").value);
+
+        var hasilTambah = angka1 + angka2;
+        var hasilKali = angka1 * angka2;
+        var hasilBagi = angka1 / angka2;
+        var hasilKurang = angka1 - angka2;
+        var hasilPangkat = Math.pow(angka1, angka2);
+        var hasilModulus = angka1 % angka2;
+
+        document.getElementById("hasil").innerHTML =
+          "Hasil Pertambahan: " +
+          hasilTambah +
+          "<br>" +
+          "Hasil Perkalian: " +
+          hasilKali +
+          "<br>" +
+          "Hasil Pembagian: " +
+          hasilBagi +
+          "<br>" +
+          "Hasil Pengurangan: " +
+          hasilKurang +
+          "<br>" +
+          "Hasil Pemangkatan: " +
+          hasilPangkat +
+          "<br>" +
+          "Hasil Modulus: " +
+          hasilModulus;
+      }
+    </script>
+  </body>
+</html>
